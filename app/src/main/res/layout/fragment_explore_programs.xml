@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExploreFragments.ExplorePrograms">
+
+    <ImageView
+        android:id="@+id/ivOnlineCourse"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/online_courses" />
+
+    <TextView
+        android:id="@+id/tvOnlineCourse"
+        android:textColor="@color/colorPrimary"
+        android:text="Online Courses"
+        android:textStyle="bold"
+        android:layout_below="@+id/ivOnlineCourse"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivOfflineCourse"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/tvOnlineCourse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/offline_courses" />
+
+    <TextView
+        android:id="@+id/tvOfflineCourse"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/ivOfflineCourse"
+        android:textStyle="bold"
+        android:text="Offline Courses"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

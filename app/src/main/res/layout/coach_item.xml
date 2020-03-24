@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E1F3D9">
+
+        <ImageView
+            android:id="@+id/Imagecoach"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/Namecoach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/Imagecoach"
+            android:fontFamily="monospace"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Specializatincoach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Namecoach"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/Imagecoach"
+            android:text="Specialization"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Organizationcoach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Specializatincoach"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/Imagecoach"
+            android:text="Organization"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Descriptioncoach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Organizationcoach"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/Imagecoach"
+            android:lines="3"
+            android:text="Description"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/callCoach"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Imagecoach"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_phone" />
+
+        <ImageView
+            android:id="@+id/emailCoach"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Imagecoach"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_email" />
+
+        <ImageView
+            android:id="@+id/linkedInCoach"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Imagecoach"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/emailCoach"
+            android:src="@drawable/linkedin_logo" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

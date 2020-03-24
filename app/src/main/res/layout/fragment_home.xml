@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btnToEvent"
+        android:layout_centerHorizontal="true"
+        android:text="Upcoming Events!"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="#fff"
+        android:textColor="#f92929"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/btnToEvent"
+        android:id="@+id/recyclerViewHomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeLinearLayout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/homeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="&quot;Don't ask for a light load, but rather ask for a strong back.&quot;"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/quoteBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="-Anonymous"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

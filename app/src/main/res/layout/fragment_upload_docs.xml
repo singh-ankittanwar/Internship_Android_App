@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadingFragments.UploadDocs">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:text="Upload Documents"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_chooseDoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="176dp"
+        android:text="Choose File" />
+
+    <EditText
+        android:id="@+id/et_DocName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginRight="20dp"
+        android:hint="File Name" />
+
+    <TextView
+        android:id="@+id/tv_selectedDoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginRight="20dp"
+        android:text="No file is selected"
+        android:textSize="17sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDoc"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="100dp" />
+
+    <Button
+        android:id="@+id/btn_UploadDoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="37dp"
+        android:text="Upload" />
+
+
+</RelativeLayout>

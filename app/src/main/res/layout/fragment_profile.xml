@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlProfile2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlProfile1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="#fff"
+                android:text="@string/logout"
+                android:textColor="#31D8C1"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSettings"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnLogout"
+                android:background="#fff"
+                android:text="@string/settings"
+                android:textColor="#31D8C1"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnEditProfile"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnSettings"
+                android:background="#fff"
+                android:text="@string/edit_profile"
+                android:textColor="#31D8C1"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlProfile1"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/display_pic"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/usernosign" />
+
+            <TextView
+                android:id="@+id/etFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/display_pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="No name provided"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/etEmailProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFullName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/email"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvMNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etEmailProfile"
+                android:layout_centerHorizontal="true"
+                android:text="No mobile number provided"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Interests"
+                android:textSize="50dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

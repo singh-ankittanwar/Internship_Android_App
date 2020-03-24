@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relLayEvent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/eventItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:text="Event Name"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/eventItemPoster"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/eventItemName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="#c0c0c0"
+            android:padding="1dp"
+            android:src="@drawable/sc_logo" />
+
+        <ImageView
+            android:id="@+id/datexyz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventItemPoster"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_date_range" />
+
+        <TextView
+            android:id="@+id/tvDateEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventItemPoster"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/datexyz"
+            android:text="27/07/2019"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/timexyz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventItemPoster"
+            android:layout_marginLeft="65dp"
+            android:layout_toRightOf="@+id/tvDateEvent"
+            android:src="@drawable/ic_time" />
+
+        <TextView
+            android:id="@+id/tvTimeEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventItemPoster"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/timexyz"
+            android:text="9:00am to 1:00pm"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/venuexyz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datexyz"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/tvVenueEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datexyz"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toRightOf="@+id/venuexyz"
+            android:text="Bizwiz learning, jhandewalan, new delhi - 110048"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

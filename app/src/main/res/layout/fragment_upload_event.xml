@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadingFragments.UploadEvent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/qwerty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Upload Event"
+            android:textColor="#000"
+            android:textSize="27dp" />
+
+        <ImageView
+            android:id="@+id/event_poster"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/qwerty"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/btn_choosePoster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_poster"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Choose Poster" />
+
+        <TextView
+            android:id="@+id/tv_eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_choosePoster"
+            android:layout_marginTop="10dp"
+            android:text="Event Name:"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/et_eventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_eventName"
+            android:hint="Event Name" />
+
+        <TextView
+            android:id="@+id/tv_eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_eventName"
+            android:layout_marginTop="10dp"
+            android:text="Date:"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/et_eventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_eventDate"
+            android:hint="Event Date" />
+
+        <TextView
+            android:id="@+id/tv_eventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_eventDate"
+            android:layout_marginTop="10dp"
+            android:text="Time:"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/et_eventTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_eventTime"
+            android:hint="Event Time" />
+
+        <TextView
+            android:id="@+id/tv_eventVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_eventTime"
+            android:layout_marginTop="10dp"
+            android:text="Venue:"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/et_eventVenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_eventVenue"
+            android:hint="Event Venue" />
+
+        <TextView
+            android:id="@+id/tv_eventDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_eventVenue"
+            android:layout_marginTop="10dp"
+            android:text="Description:"
+            android:textColor="#000" />
+
+        <EditText
+            android:gravity="left"
+            android:id="@+id/et_eventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_eventDescription"
+            android:hint="Event Description"
+            android:lines="5" />
+
+        <TextView
+            android:id="@+id/tv_eventLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_eventDescription"
+            android:layout_marginTop="10dp"
+            android:text="Registration Link:"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/et_eventLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_eventLink"
+            android:hint="Registration or Payment Link" />
+
+        <ProgressBar
+            android:id="@+id/progress_barUploadEvent"
+            android:layout_below="@id/et_eventLink"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_UploadEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_barUploadEvent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="Upload" />
+
+    </RelativeLayout>
+
+</ScrollView>

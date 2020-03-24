@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "639321881799",
+    "firebase_url": "https://smartcoach-3b195.firebaseio.com",
+    "project_id": "smartcoach-3b195",
+    "storage_bucket": "smartcoach-3b195.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639321881799:android:5b0481a9f9febcd5",
+        "android_client_info": {
+          "package_name": "bizwizlearning.com.bizwizlearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639321881799-bqvbdsba6lt8g7fl8kmurlu21daol18j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrjv17t2G_oU18w6kKsQssRsg9aA29LRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639321881799-bqvbdsba6lt8g7fl8kmurlu21daol18j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

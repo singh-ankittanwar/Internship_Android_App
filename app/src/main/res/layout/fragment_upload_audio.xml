@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadingFragments.UploadAudio">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:text="Upload Audio"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/songTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Song Title" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="choose Audio"
+                android:textSize="16dp"
+                android:id="@+id/btn_uploadAudio"/>
+
+            <TextView
+                android:id="@+id/tvSongFileSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="No file selected" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarSong"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="UPLOAD"
+            android:textStyle="bold"
+            android:id="@+id/btn_chooseAudio"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadCoach">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/coachUploadImage"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/usernosign"
+            />
+
+        <TextView
+            android:id="@+id/coachImageText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/coachUploadImage"
+            android:gravity="center"
+            android:text="No Image Selected" />
+
+        <Button
+            android:id="@+id/coachChooseImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coachImageText"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/coachUploadImage"
+            android:text="Choose Image" />
+
+        <EditText
+            android:id="@+id/coachUploadName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coachUploadImage"
+            android:layout_marginTop="20dp"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/coachUploadMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coachUploadName"
+            android:layout_marginTop="10dp"
+            android:hint="Mobile Number"
+            android:inputType="numberSigned"/>
+
+        <EditText
+            android:id="@+id/coachUploadOrg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coachUploadMobile"
+            android:layout_marginTop="10dp"
+            android:hint="Organisation" />
+
+        <EditText
+            android:id="@+id/coachUploadSpecialization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coachUploadOrg"
+            android:layout_marginTop="10dp"
+            android:hint="Specialization" />
+
+        <EditText
+            android:id="@+id/coachUploadEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coachUploadSpecialization"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/coachUploadLIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coachUploadEmail"
+            android:layout_marginTop="10dp"
+            android:hint="LinkedIn" />
+
+        <EditText
+            android:id="@+id/coachUploadDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coachUploadLIN"
+            android:layout_marginTop="10dp"
+            android:hint="Coach Description"
+            android:lines="7"
+            android:gravity="left"/>
+
+        <Button
+            android:id="@+id/btnAddCoach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coachUploadDescription"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="50dp"
+            android:text="Add Coach" />
+
+    </RelativeLayout>
+
+</ScrollView>

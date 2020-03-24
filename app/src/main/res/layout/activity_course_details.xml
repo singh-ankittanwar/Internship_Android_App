@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/cdName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="serif"
+            android:text="Course Name"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cdPoster"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/cdName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#c0c0c0"
+            android:padding="1dp"
+            android:src="@drawable/sc_logo" />
+
+        <TextView
+            android:id="@+id/cdDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cdPoster"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="Course Details"
+            android:textColor="#000"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/jkl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cdDescription"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Benefits: "
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cdBenefits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jkl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:text="Benefits of the course"
+            android:textColor="#000"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/btnApplyCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/cdBenefits"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_gradient_style"
+            android:text="Apply"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+</ScrollView>

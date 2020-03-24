@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8FFFC">
+
+        <TextView
+            android:id="@+id/tvAboutHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="ABOUT SMARTCOACH"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAboutBizwiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAboutHeading"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="BIZWIZ help in providing superior measurable results to the individuals and organizations by providing experiential and interactive potential transformation solutions in the areas of leadership, sales, productivity, business finance and personal financial planning through innovative programs and advisory services. We strive to provide an assortment of innovative offerings, global and local, through our various value added services and partners.\nOUR PROFILE BIZWIZ help in providing superior measurable results to the individuals and organizations by providing experiential and interactive potential transformation solutions in the areas of leadership, sales, productivity, business finance and personal financial planning through innovative programs and advisory services. We strive to provide an assortment of innovative offerings, global and local, through our various value added services and partners."
+            android:textColor="#000"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAboutBizwiz"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="contact@bizwizlearning.com\n9582288170\n8570868389\n\nwww.bizwizlearning.com" />
+
+    </RelativeLayout>
+
+</ScrollView>
