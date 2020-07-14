@@ -1,5 +1,5 @@
 # Internship_Android_App
-This android project is created during the summer internship.
+This android project is created during the summer internship - Jun-July, 2019
 
 Features of App:
 1. Registration/Log-in
